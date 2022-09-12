@@ -23,6 +23,9 @@ body{
 h1{
     font-size:4.5rem;
 }
+i{
+    padding-right: 0.25rem;
+}
 /* #endregion common rules */
 
 /* #region utility */
@@ -52,8 +55,12 @@ h1{
 header{
     padding:1rem;
 }
-
-header d-flex{
+header::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+header .d-flex{
     justify-content: space-between;
 }
 header img{
@@ -81,6 +88,8 @@ header a.btn{
 /* #endregion header */
 
 /* #region main */
+
+/* jumbo_tron section */
 .jumbo_tron{
     background-color: var(--bg-color-light);
 }
@@ -98,7 +107,7 @@ header a.btn{
     position: relative;
 }
 .jumbo_tron p{
-    margin-bottom:1.5rem;
+    margin-bottom:1.8rem;
 }
 .annull{
     margin-top:1.5rem;
@@ -112,6 +121,87 @@ header a.btn{
     text-decoration: none;
     padding: 0.25rem 0.5rem;
 }
+section.jumbo_tron{
+    margin-bottom: 8rem;
+}
+
+/* /.jumbo_tron section */
+
+/* business_plans section */
+main > .container{
+    width:50%;
+}
+.business_plans h2{
+    margin-bottom:2.7rem;
+}
+.business_plans_alternatives{
+    margin-bottom:2rem;
+}
+.business_plans .row{
+    gap:1.5rem;
+}
+#month{
+    margin-right:2rem;
+}
+input+div{
+    display: inline-block;
+}
+input[type]{
+    vertical-align: middle;
+}
+.card{
+    border:0.1rem solid lightgray;
+}
+.business_plan_header{
+    text-align: center;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 0.1rem solid lightgray;
+}
+.business_plan_title div:last-child, hr{
+    opacity: 0.5;
+}
+.business_plan_header > div{
+    display: inline-block;
+}
+.business_plan_title div, .business_plan_features div{
+    margin-top: 1rem;
+}
+.business_plan_content{
+    padding: 0 1.3rem;
+}
+.business_plan_content > div{
+    margin:2rem 0;
+}
+.free_trial{
+    margin-top: 1rem;;
+}
+.free_trial .btn{
+    text-decoration: none;
+    padding: 0.5rem 2rem;
+    font-size: 0.8rem;
+}
+.free_trial div{
+    margin-top:2.5rem;
+    margin-bottom: 2rem;
+}
+.highlights{
+    margin-top:3rem;
+}
+.highlights h4{
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+.highlights div{
+    margin-top:1rem;
+}
+.highlights i{
+    color: var(--btn-color);
+}
+hr{
+    width:15%;
+}
+/* ./business_plans section */
 /* #endregion main */
 
 
