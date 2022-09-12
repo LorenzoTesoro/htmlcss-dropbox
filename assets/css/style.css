@@ -1,0 +1,51 @@
+/* #region common rules */
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 70%;
+    margin: 0 auto;
+}
+/* #endregion common rules */
+
+/* #region utility */
+
+.d-flex{
+    display: flex;
+}
+.col-4{
+    width:calc((100% / 12) * 4);
+}
+.col-5{
+    width:calc(((100% / 12) * 6) - ((100% / 12) * 1));
+}
+.col-6{
+    width:calc((100% / 12) * 6);
+}
+
+.col-8{
+    width:calc((100% / 8) * 8);
+}
+/* #endregion utility */
+
+/* debug */
+
+header{
+    height:100px;
+    background-color: red;
+}
+
+.col-4, .col-5, .col-6, .col-8{
+    height: 50px;
+    border:1px solid black;
+    background-color: green;
+}
+
+.container{
+    background-color: aqua;
+}
+
+
