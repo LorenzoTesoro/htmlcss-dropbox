@@ -5,9 +5,21 @@
     box-sizing: border-box;
 }
 
+:root{
+    --bg-color-light:#B4D0E7;
+    --bg-color-dark:#000000;
+    --white:#FFFFFF;
+    --btn-color:#0061FF;
+    --text-color-shade:#474545;    
+}
+
 .container{
     width: 70%;
     margin: 0 auto;
+}
+
+img{
+    max-width: 100%;
 }
 /* #endregion common rules */
 
@@ -29,11 +41,17 @@
 .col-8{
     width:calc((100% / 8) * 8);
 }
+
+.btn{
+    background-color: var(--btn-color);
+    color:var(--white);
+}
 /* #endregion utility */
 
-/* debug */
+/* #region debug */
 
-header{
+
+/* header{
     height:100px;
     background-color: red;
 }
@@ -47,5 +65,40 @@ header{
 .container{
     background-color: aqua;
 }
+ */
+/* #endregion debug */
+
+/* #region header */
+header{
+    padding:1rem;
+}
+
+header d-flex{
+    justify-content: space-between;
+}
+header img{
+    width:10%;
+    vertical-align: middle;
+}
+
+header a{
+    margin: 0 0.95rem;
+    text-decoration: none;
+    color:var(--text-color-shade);
+}
+
+header .col-6.d-flex{
+    justify-content: flex-end;
+}
+
+header a.btn{
+    margin-left: 0;
+    padding: 0.25rem 0.5rem;
+}
+
+
+
+/* #endregion header */
+
 
 
