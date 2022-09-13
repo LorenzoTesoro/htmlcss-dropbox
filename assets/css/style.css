@@ -336,6 +336,30 @@ blockquote{
 }
 /* /. teams section */
 
+/* free_trial section */
+section.trial_period{
+    background-color: var(--bg-color-light);
+    padding-top:7rem;
+    padding-bottom:6rem;
+}
+.trial_period h2{
+    color:var(--banner-purple);
+}
+.trial_period .d-flex{
+    align-items: center;
+    justify-content: space-between;
+}
+.trial_period a{
+    text-decoration: none;
+    background-color: var(--white);
+    color:var(--black);
+    padding: 0.4rem 2rem;
+}
+.trial_period h2+div{
+    padding-right:2rem;
+}
+/* /. free_trial section */
+
 /* #endregion main */
 
 
