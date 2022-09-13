@@ -10,7 +10,15 @@
     --bg-color-dark:#000000;
     --white:#FFFFFF;
     --btn-color:#0061FF;
-    --text-color-shade:#474545;    
+    --btn-color-lighter:#0093CE;
+    --text-color-shade:#474545;
+    --banner-purple:#61082B;
+    --banner-lightgreen:#A2D39B;
+    --banner-danger:#fF1C1C;
+    --banner--danger-dark:#d5001F;
+    --banner--primary-dark:#0D2481;
+    --banner--alert:#FFD830;
+    --banner-lightgrey: #F5F5F5;
 }
 body{
     font-family: 'Familjen Grotesk', sans-serif;;
@@ -28,6 +36,10 @@ i{
 }
 img{
     max-width:100%;
+}
+
+.buy, .teams_title a{
+    color:var(--btn-color);
 }
 /* #endregion common rules */
 
@@ -267,6 +279,62 @@ div.cta{
     margin-bottom: 2rem;
 }
 /* ./ features section */
+
+/* teams section */
+
+.teams_title{
+    margin-top: 7rem;
+}
+.teams_title h2{
+    margin-bottom:2.5rem;
+}
+.teams_banner .col-6 img{
+    aspect-ratio: 1/1;
+    padding:5rem;
+    filter:invert(1);
+}
+.teams_banner .col-4.center{
+    padding:3rem;
+    background-color: var(--banner-lightgrey);
+}
+.center_banner{
+    margin-bottom:3rem;
+}
+blockquote{
+    margin-top:2rem;
+    margin-bottom:2rem;
+}
+#university_florida img{
+    object-fit: contain;
+}
+/* img_background */
+#designit{
+    background-color: var(--banner-lightgreen);
+    border: 10px solid #D1E9CD;
+}
+#university_arizona{
+    background-color: var(--banner-purple);
+}
+#university_florida{
+    background-color: var(--btn-color-lighter);
+    object-fit: contain;
+}
+#topps{
+    background-color: var(--banner-danger);
+}
+#world_bicycle{
+    background-color: var(--banner--danger-dark);
+}
+#hearst_corp{
+    background-color: var(--btn-color-lighter);
+}
+#lonely_planet{
+    background-color: var(--banner--primary-dark);
+}
+#clear_channel{
+    background-color: var(--banner--alert);
+}
+/* /. teams section */
 
 /* #endregion main */
 
