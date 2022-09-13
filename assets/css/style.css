@@ -360,6 +360,18 @@ section.trial_period{
 }
 /* /. free_trial section */
 
+/* faq section */
+section.faq h2{
+    margin-bottom:2.5rem;
+}
+section.faq .d-flex{
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 0;
+    border-top:0.1rem solid lightgray;
+    border-bottom:0.1rem solid lightgray;
+}
+/* /.faq section */
 /* #endregion main */
 
 
