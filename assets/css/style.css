@@ -26,6 +26,9 @@ h1{
 i{
     padding-right: 0.25rem;
 }
+img{
+    max-width:100%;
+}
 /* #endregion common rules */
 
 /* #region utility */
@@ -224,10 +227,30 @@ div.cta{
 .cta h3{
     margin-bottom:1rem;
 }
-.cta .col-8 > div:first-child{
+.cta h3+div{
     margin-bottom:3rem;
 }
 /* ./business_plans section */
+
+/* partner section */
+section.partner{
+    margin-top:8rem;
+}
+.partner .d-flex{
+    gap:3rem;
+    align-items: center;
+}
+.partner p{
+    margin-top: 1.5rem;
+    margin-bottom: 2.2rem;
+}
+.partner a{
+    text-decoration: none;
+    border:1px solid black;
+    padding: 0.7rem;
+    color:var(--text-color-shade)
+}
+/* ./partner section */
 /* #endregion main */
 
 
