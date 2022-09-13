@@ -129,6 +129,8 @@ header a:hover{
 .jumbo_tron img{
     width:70%;
     position: absolute;
+    top:0;
+    right:0;
     z-index: 100;
 }
 .jumbo_tron .row.d-flex{
