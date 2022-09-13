@@ -31,6 +31,9 @@ body{
 h1{
     font-size:4.5rem;
 }
+p{
+    font-size: 0.8rem;
+}
 i{
     padding-right: 0.25rem;
 }
@@ -194,6 +197,11 @@ input[type]{
 .business_plan_content > div{
     margin:2rem 0;
 }
+.business_plan_features > div, .highlights > div{
+    display: flex;
+    align-items: baseline;
+}
+
 .free_trial{
     margin-top: 1rem;;
 }
@@ -395,7 +403,6 @@ footer .column > div{
 footer hr{
     margin-top:5rem;
     margin-bottom:3rem;
-    height:1px;
     width:10%;
 }
 
