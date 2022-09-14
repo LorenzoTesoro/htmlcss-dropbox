@@ -21,7 +21,7 @@
     --banner-lightgrey: #F5F5F5;
 }
 body{
-    font-family: 'Familjen Grotesk', sans-serif;;
+    font-family: 'Open Sans', sans-serif;
 }
 .container{
     width: 60%;
@@ -31,8 +31,8 @@ body{
 h1{
     font-size:4.5rem;
 }
-p{
-    font-size: 0.8rem;
+p, .annull, span, nav a, footer div{
+    font-size: 0.9rem;
 }
 i{
     padding-right: 0.25rem;
@@ -66,6 +66,7 @@ img{
 .btn{
     background-color: var(--btn-color);
     color:var(--white);
+    font-size: 0.8rem;
 }
 
 .space_section{
@@ -90,8 +91,7 @@ header .d-flex{
     justify-content: space-between;
 }
 header img{
-    width:10%;
-    vertical-align: middle;
+   vertical-align: middle; 
 }
 
 header a{
@@ -102,11 +102,12 @@ header a{
 
 header .col-6.d-flex{
     justify-content: flex-end;
+    align-items: baseline;
 }
 
 header a.btn{
     margin-left: 0;
-    padding: 0.25rem 0.5rem;
+    padding: 0.25rem 0.7rem;
 }
 
 header a:hover{
@@ -124,32 +125,30 @@ header a:hover{
 .jumbo_tron h1{
     padding-top:3rem;
     padding-bottom:2rem;
-    font-weight: bold;
 }
 .jumbo_tron img{
-    width:70%;
-    position: absolute;
-    top:0;
-    right:0;
-    z-index: 100;
-}
-.jumbo_tron .row.d-flex{
-    position: relative;
+    margin-bottom:-5rem;
 }
 .jumbo_tron p{
     margin-bottom:1.8rem;
 }
 .annull{
     margin-top:1.5rem;
-    margin-bottom:4rem;
 }
 .jumbo_tron i{
     font-size:2.5rem;
-    padding-bottom: 1rem;
+    padding-bottom: 0.8rem;
+    position: absolute;
+    left:0;
+    bottom:0;
+}
+
+.jumbo_tron .container .row > .col-4{
+    position: relative;
 }
 .jumbo_tron .btn{
     text-decoration: none;
-    padding: 0.25rem 0.5rem;
+    padding: 0.40rem 1rem;
 }
 section.jumbo_tron{
     margin-bottom: 8rem;
@@ -173,11 +172,11 @@ main > .container{
 #month{
     margin-right:2rem;
 }
-input+div{
-    display: inline-block;
+.business_plans input+div{
+    font-size: 0.8rem;
 }
-input[type]{
-    vertical-align: middle;
+.business_plans input{
+    margin-right:0.2rem;
 }
 .card{
     border:0.1rem solid lightgray;
@@ -212,9 +211,12 @@ input[type]{
     margin-top: 1rem;;
 }
 .free_trial .btn{
+    display: inline-block;
+    width: 100%;
+    text-align: center;
     text-decoration: none;
     padding: 0.5rem 2rem;
-    font-size: 0.8rem;
+
 }
 .free_trial div{
     margin-top:2.5rem;
@@ -251,8 +253,7 @@ div.cta{
 }
 .cta .btn{
     text-decoration: none;
-    padding: 0.5rem 2rem;
-    font-size: 0.8rem;
+    padding:0.5rem 1.5rem;
 }
 .cta h3{
     margin-bottom:1rem;
@@ -314,9 +315,13 @@ div.cta{
 .center_banner{
     margin-bottom:3rem;
 }
+.center_banner img{
+    padding-right:15rem;
+}
 blockquote{
     margin-top:2rem;
     margin-bottom:2rem;
+    font-size: 0.8rem;
 }
 #university_florida img{
     object-fit: contain;
@@ -404,7 +409,7 @@ footer h4{
     margin-bottom: 1.7rem;
 }
 footer .column > div{
-    margin-bottom:1.3rem;
+   margin-bottom:1.1rem;
 }
 footer hr{
     margin-top:5rem;
